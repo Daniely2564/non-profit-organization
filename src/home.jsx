@@ -7,7 +7,10 @@ const Home = () => {
     <Layout>
       <StyledHome>
         <div className="container intro background-fixed">
-          <div className="logo">NPO24/7</div>
+          <div className="logo">
+            NPO24/7
+            <img src="/img/logo.png" className="logo-img" />
+          </div>
           <Nav />
         </div>
         <br />
@@ -15,62 +18,36 @@ const Home = () => {
           <h1 className="text-center upper">Mission</h1>
           <div className="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
+              Our objectives are to advance New Jersey youth, and develop human
+              capital through “Academic, Art &amp; Athletic” platforms. We
+              develop innovative and sustainable leaders as they prepare
+              themselves into legislative, advocacy, corporate and nonprofit
+              roles.
             </p>
             <br />
             <br />
-            <div className="text-center">
-              <button type="button" className="btn">
-                Learn More About Us
-              </button>
-            </div>
           </div>
         </div>
         <div className="container main background-fixed">
-          <div className="center">Goals</div>
+          <div className="center">Methodology</div>
         </div>
         <div className="container small">
           <br />
-          <h1 className="text-center upper">Goal</h1>
+          <h1 className="text-center upper">Methodology</h1>
           <div className="content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
+              Academic and practical continuum of “best practice” processes and
+              policies that have been extensively evaluated and proven to be
+              effective. Our expectations are astronomical for our organization,
+              and with our strong sense of values and passion, we expect
+              positive outcomes.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              perspiciatis cupiditate minima rerum, iste earum cumque eveniet
-              consectetur at perferendis quia dolores nulla maxime molestiae id,
-              saepe debitis praesentium impedit.
-            </p>
+
             <br />
             <br />
             <div className="text-center">
               <button type="button" className="btn">
-                Learn More About Us
+                Donate
               </button>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHome = styled.div`
+export const StyledEducation = styled.div`
   .container {
     height: 100vh;
     background: #f9f9f9;
@@ -21,7 +21,7 @@ export const StyledHome = styled.div`
 
   .intro {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/img/image0.jpeg") no-repeat center;
+      url("/img/education-1.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -43,7 +43,9 @@ export const StyledHome = styled.div`
     background-size: cover;
     background-attachment: fixed;
   }
-
+  .main-item {
+    transition: 0.5s;
+  }
   .logo {
     color: #f9f9f9;
     font-size: 2.4rem;
@@ -67,6 +69,27 @@ export const StyledHome = styled.div`
     text-transform: uppercase;
     letter-spacing: 5px;
     transform: translate(-50%, -50%);
+  }
+  .partners-list {
+    list-style: circle;
+  }
+  .partners-list li {
+    margin-bottom: 10px;
+  }
+  .pr-5 {
+    padding-left: 30px;
+  }
+  .initiative-list {
+    margin-top: 5px;
+  }
+  .initiative-list li {
+    margin-bottom: 5px;
+  }
+  .program-list {
+    margin-top: 5px;
+  }
+  .program-list li {
+    margin-bottom: 5px;
   }
 `;
 // Nav Drop down

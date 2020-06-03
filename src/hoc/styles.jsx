@@ -69,4 +69,13 @@ body{
 .upper{
 	text-transform:uppercase;
 }
+.bold{
+	font-weight:bold;
+}
+.underline{
+	text-decoration:underline;
+}
+p{
+	line-height:2.5rem;
+}
 `;

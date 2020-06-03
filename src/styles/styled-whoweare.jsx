@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHome = styled.div`
+export const StyledWhoWeAre = styled.div`
   .container {
     height: 100vh;
     background: #f9f9f9;
@@ -21,7 +21,7 @@ export const StyledHome = styled.div`
 
   .intro {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/img/image0.jpeg") no-repeat center;
+      url("/img/whoweare-1.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -43,7 +43,9 @@ export const StyledHome = styled.div`
     background-size: cover;
     background-attachment: fixed;
   }
-
+  .main-item {
+    transition: 0.5s;
+  }
   .logo {
     color: #f9f9f9;
     font-size: 2.4rem;
@@ -67,6 +69,12 @@ export const StyledHome = styled.div`
     text-transform: uppercase;
     letter-spacing: 5px;
     transform: translate(-50%, -50%);
+  }
+  .goal-list {
+    list-style: circle;
+  }
+  .goal-list li {
+    margin-bottom: 10px;
   }
 `;
 // Nav Drop down

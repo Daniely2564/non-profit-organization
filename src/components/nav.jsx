@@ -1,31 +1,71 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { StyledNav } from "../styles/styled-nav";
+
 const Nav = () => {
   const { pathname } = useRouter();
   return (
-    <nav className="nav">
+    <StyledNav className="nav">
       <ul className="nav-list">
-        <li className={`nav-item${pathname === "/" ? " active" : ""}`}>Home</li>
+        <Link href="/">
+          <li className={`nav-item${pathname === "/" ? " active" : ""}`}>
+            Home
+          </li>
+        </Link>
         <li className="nav-item">
-          <span className="main-item">Who We Are</span>
+          <Link href="/whoweare">
+            <span
+              className={`main-item${
+                pathname === "/whoweare" ? " active" : ""
+              }`}
+            >
+              Who We Are
+            </span>
+          </Link>
           <ul className="hidden-nav-item">
-            <li>History</li>
-            <li>Goals</li>
-            <li>Team</li>
+            <Link href="/whoweare#history">
+              <li>History</li>
+            </Link>
+            <Link href="/whoweare#goal">
+              <li>Goals</li>
+            </Link>
+            <Link href="/whoweare#team">
+              <li>Team</li>
+            </Link>
           </ul>
         </li>
         <li className="nav-item">
-          <span className="main-item">Education&nbsp;</span>
+          <Link href="/education">
+            <span
+              className={`main-item${
+                pathname === "/education" ? " active" : ""
+              }`}
+            >
+              Education&nbsp;
+            </span>
+          </Link>
           <ul className="hidden-nav-item">
-            <li>Initiative</li>
-            <li>Program</li>
-            <li>Awareness</li>
-            <li>Partners</li>
+            <Link href="/education#initiative">
+              <li>Initiative</li>
+            </Link>
+            <Link href="/education#program">
+              <li>Program</li>
+            </Link>
+            <Link href="/education#evaluation">
+              <li>Evaluation</li>
+            </Link>
+            <Link href="/education#awareness">
+              <li>Awareness</li>
+            </Link>
+            <Link href="/education#partners">
+              <li>Partners</li>
+            </Link>
           </ul>
         </li>
         <li className="nav-item">Give</li>
         <li className="nav-item">Contact Us</li>
       </ul>
-    </nav>
+    </StyledNav>
   );
 };
 export default Nav;
